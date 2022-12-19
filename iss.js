@@ -63,6 +63,7 @@ const fetchCoordsByIP = function (ip, callback) {
       callback(Error(msg), null);
       return;
     }
+    
     const ipAddress = JSON.parse(body).ip;
     callback(null, ipAddress);
   });
