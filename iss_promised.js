@@ -43,9 +43,9 @@ const printPassTimes = function (passTimes) {
     const duration = pass.duration;
     console.log(`Next pass at ${datetime} for ${duration} seconds!`);
   }
-};
+}; 
 
-const nextISSTimesForMyLocation = function () {
+const nextISSTimesForMyLocation = () => {
   return fetchMyIP()
     .then(fetchCoordsByIP)
     .then(fetchISSFlyOverTimes)

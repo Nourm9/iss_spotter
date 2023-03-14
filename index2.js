@@ -28,7 +28,7 @@ const nextISSTimesForMyLocation =  () => {
     });
 };
 
-const printPassTimes = function (passTimes) {
+const printPassTimes =  (passTimes) => {
   for (const pass of passTimes) {
     const datetime = new Date(0);
     datetime.setUTCSeconds(pass.risetime);
